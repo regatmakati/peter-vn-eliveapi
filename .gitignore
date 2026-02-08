@@ -1,0 +1,5 @@
+/.idea
+/Runtime/*
+/log/*
+/.well-known
+/vendor

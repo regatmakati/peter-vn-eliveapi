@@ -13,7 +13,9 @@ function connectionRedis()
     $REDIS_PORT = DI()->config->get('app.REDIS_PORT');
     $redis = new Redis();
     $redis->pconnect($REDIS_HOST, $REDIS_PORT);
-    $redis->auth($REDIS_AUTH);
+    if($REDIS_AUTH){
+        $redis->auth($REDIS_AUTH);
+    }
 
     return $redis;
 }
