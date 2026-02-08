@@ -1,0 +1,6 @@
+2022-02-02 22:43:34 提交参数信息 开始:
+2022-02-02 22:43:34 提交参数信息 _REQUEST:{"service":"PCLive.StopRoom","uid":"406","token":"a4c383714d54540dc654775985ff1db9","stream":"406_1643812916"}
+2022-02-02 22:43:34 提交参数信息 isexist:null
+2022-02-02 22:43:34 提交参数信息 checkToken:700
+2022-02-02 22:43:34 提交参数信息 info:{"uid":"406","showid":"1643812916","starttime":"1643812931","title":"teer","province":"","city":"\u597d\u50cf\u5728\u706b\u661f","stream":"406_1643812916","lng":"","lat":"","type":"0","type_val":"","liveclassid":"4"}
+2022-02-02 22:43:34 提交参数信息 result:"1533"

@@ -1,0 +1,22 @@
+2021-08-14 15:45:28|ERROR|PCUser.UpdateAvatar|Obs\ObsException: OBS Error Code: , Status Code: -1, OBS Error Type: client, OBS Error Message: cURL error 56: Recv failure: Connection reset by peer (see http://curl.haxx.se/libcurl/c/libcurl-errors.html), User-Agent: obs-sdk-php/3.19.9
+
+2021-08-14 16:14:08|ERROR|PCUser.UpdateAvatar|Obs\ObsException: OBS Error Code: , Status Code: -1, OBS Error Type: client, OBS Error Message: cURL error 56: Recv failure: Connection reset by peer (see http://curl.haxx.se/libcurl/c/libcurl-errors.html), User-Agent: obs-sdk-php/3.19.9
+
+2021-08-14 16:15:11|ERROR|PCUser.UpdateAvatar|Obs\ObsException: OBS Error Code: , Status Code: -1, OBS Error Type: client, OBS Error Message: cURL error 56: Recv failure: Connection reset by peer (see http://curl.haxx.se/libcurl/c/libcurl-errors.html), User-Agent: obs-sdk-php/3.19.9
+
+2021-08-14 16:51:17|ERROR|PCLive.CreateRoom|Obs\ObsException: OBS Error Code: RequestTimeout, Status Code: 408, OBS Error Type: client, OBS Error Message: The server did not receive a complete request message within the time that it was prepared to wait., User-Agent: obs-sdk-php/3.19.9
+
+2021-08-14 16:53:12|ERROR|PCLive.CreateRoom|Obs\ObsException: OBS Error Code: RequestTimeout, Status Code: 408, OBS Error Type: client, OBS Error Message: The server did not receive a complete request message within the time that it was prepared to wait., User-Agent: obs-sdk-php/3.19.9
+
+2021-08-14 16:53:17|ERROR|PCLive.CreateRoom|Obs\ObsException: OBS Error Code: RequestTimeout, Status Code: 408, OBS Error Type: client, OBS Error Message: The server did not receive a complete request message within the time that it was prepared to wait., User-Agent: obs-sdk-php/3.19.9
+
+2021-08-14 17:04:50|ERROR|PCUser.UpdateAvatar|Obs\ObsException: OBS Error Code: RequestTimeout, Status Code: 408, OBS Error Type: client, OBS Error Message: The server did not receive a complete request message within the time that it was prepared to wait., User-Agent: obs-sdk-php/3.19.9
+
+2021-08-14 18:24:24|ERROR|PCUser.UpdateAvatar|Obs\ObsException: OBS Error Code: , Status Code: 521, OBS Error Type: server, OBS Error Message: Server error: `PUT http://yyzb-live.obs.ap-southeast-1.myhuaweicloud.com/image/avatar/20210814/310c8057c671c3537df11cdba567faa2` resulted in a `521 Origin Down` response:
+<html>
+<head><title>521 Origin Down</title></head>
+<body bgcolor="white">
+<center><h1>521 Origin Down</h1></center>
+ (truncated...)
+, User-Agent: obs-sdk-php/3.19.9
+

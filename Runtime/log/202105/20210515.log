@@ -1,0 +1,530 @@
+2021-05-15 14:35:36|ERROR|PCUser.GetBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('333')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCUser.php(281): Domain_User->getBaseInfo('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCUser->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 14:44:02|ERROR|PCUser.GetBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('333')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCUser.php(281): Domain_User->getBaseInfo('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCUser->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 14:44:04|ERROR|PCHome.GetRecommendAnchor|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(139): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(886): Domain_Home->getSubscribe('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 14:44:04|ERROR|PCHome.GetHot|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(962): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(254): Model_Home->getRecommendedStream('333', 0, true, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('333', true, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(401): Domain_Home->getHot('333', true, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-15 14:44:22|ERROR|PCUser.GetBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('333')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCUser.php(281): Domain_User->getBaseInfo('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCUser->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 14:44:22|ERROR|PCHome.GetRecommendAnchor|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(139): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(886): Domain_Home->getSubscribe('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 14:44:22|ERROR|PCHome.GetHot|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(962): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(254): Model_Home->getRecommendedStream('333', 0, true, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('333', true, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(401): Domain_Home->getHot('333', true, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-15 14:49:55|ERROR|PCUser.GetBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('333')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCUser.php(281): Domain_User->getBaseInfo('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCUser->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 14:49:55|ERROR|PCHome.GetRecommendAnchor|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(139): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(886): Domain_Home->getSubscribe('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 14:49:55|ERROR|PCHome.GetHot|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(962): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(254): Model_Home->getRecommendedStream('333', 0, true, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('333', true, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(401): Domain_Home->getHot('333', true, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-15 14:50:51|ERROR|PCUser.GetBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('333')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCUser.php(281): Domain_User->getBaseInfo('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCUser->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 14:50:51|ERROR|PCHome.GetRecommendAnchor|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(139): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(886): Domain_Home->getSubscribe('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 14:50:51|ERROR|PCHome.GetHot|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(962): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(254): Model_Home->getRecommendedStream('333', 0, true, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('333', true, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(401): Domain_Home->getHot('333', true, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-15 14:53:51|ERROR|PCUser.GetBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('333')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCUser.php(281): Domain_User->getBaseInfo('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCUser->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 14:55:07|ERROR|PCHome.GetRecommendAnchor|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(139): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(886): Domain_Home->getSubscribe('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 14:55:07|ERROR|PCHome.GetHot|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(962): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(254): Model_Home->getRecommendedStream('333', 0, true, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('333', true, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(401): Domain_Home->getHot('333', true, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-15 14:58:38|ERROR|PCHome.GetRecommendAnchor|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(139): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(886): Domain_Home->getSubscribe('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 14:58:38|ERROR|PCUser.GetBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('333')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCUser.php(281): Domain_User->getBaseInfo('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCUser->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 14:58:38|ERROR|PCHome.GetHot|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(962): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(254): Model_Home->getRecommendedStream('333', 0, true, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('333', true, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(401): Domain_Home->getHot('333', true, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-15 14:58:59|ERROR|PCUser.GetBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('333')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCUser.php(281): Domain_User->getBaseInfo('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCUser->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 14:58:59|ERROR|PCHome.GetRecommendAnchor|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(139): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(886): Domain_Home->getSubscribe('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 14:58:59|ERROR|PCHome.GetHot|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(962): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(254): Model_Home->getRecommendedStream('333', 0, true, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('333', true, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(401): Domain_Home->getHot('333', true, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-15 14:59:21|ERROR|PCHome.GetRecommendAnchor|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(139): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(886): Domain_Home->getSubscribe('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:07:13|ERROR|PCHome.GetRecommendAnchor|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(139): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(886): Domain_Home->getSubscribe('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:07:13|ERROR|PCHome.GetHot|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(962): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(254): Model_Home->getRecommendedStream('333', 0, true, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('333', true, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(401): Domain_Home->getHot('333', true, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-15 15:10:47|ERROR|PCUser.GetBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('333')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCUser.php(281): Domain_User->getBaseInfo('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCUser->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:10:47|ERROR|PCHome.GetRecommendAnchor|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(139): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(886): Domain_Home->getSubscribe('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:10:47|ERROR|PCHome.GetHot|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(962): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(254): Model_Home->getRecommendedStream('333', 0, true, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('333', true, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(401): Domain_Home->getHot('333', true, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-15 15:32:37|ERROR|PCUser.GetBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('333')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCUser.php(281): Domain_User->getBaseInfo('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCUser->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:32:37|ERROR|PCHome.GetRecommendAnchor|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(139): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(886): Domain_Home->getSubscribe('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:32:37|ERROR|PCHome.GetHot|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(962): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(254): Model_Home->getRecommendedStream('333', 0, true, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('333', true, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(401): Domain_Home->getHot('333', true, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-15 15:36:12|ERROR|PCHome.GetRecommendAnchor|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(139): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(886): Domain_Home->getSubscribe('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:36:33|ERROR|PCHome.GetRecommendAnchor|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(139): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(886): Domain_Home->getSubscribe('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:42:01|ERROR|User.getBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('334')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('334')
+#5 /www/wwwroot/eliveapi/Appapi/Api/User.php(271): Domain_User->getBaseInfo('334')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_User->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:42:14|ERROR|User.getBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('334')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('334')
+#5 /www/wwwroot/eliveapi/Appapi/Api/User.php(271): Domain_User->getBaseInfo('334')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_User->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:42:20|ERROR|User.getBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('334')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('334')
+#5 /www/wwwroot/eliveapi/Appapi/Api/User.php(271): Domain_User->getBaseInfo('334')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_User->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:42:30|ERROR|User.getBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('334')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('334')
+#5 /www/wwwroot/eliveapi/Appapi/Api/User.php(271): Domain_User->getBaseInfo('334')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_User->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:42:30|ERROR|User.getBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('334')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('334')
+#5 /www/wwwroot/eliveapi/Appapi/Api/User.php(271): Domain_User->getBaseInfo('334')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_User->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:43:04|ERROR|PCHome.GetHot|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(962): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(254): Model_Home->getRecommendedStream('333', 0, true, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('333', true, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(401): Domain_Home->getHot('333', true, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-15 15:43:04|ERROR|PCHome.GetRecommendAnchor|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(139): Model_Home->getSubscribe('333')
+#5 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(886): Domain_Home->getSubscribe('333')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:44:13|ERROR|User.getBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('334')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('334')
+#5 /www/wwwroot/eliveapi/Appapi/Api/User.php(271): Domain_User->getBaseInfo('334')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_User->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:45:41|ERROR|User.getBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('334')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('334')
+#5 /www/wwwroot/eliveapi/Appapi/Api/User.php(271): Domain_User->getBaseInfo('334')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_User->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:45:53|ERROR|User.getBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('334')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('334')
+#5 /www/wwwroot/eliveapi/Appapi/Api/User.php(271): Domain_User->getBaseInfo('334')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_User->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:47:13|ERROR|User.getBaseInfo|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 /www/wwwroot/eliveapi/Common/functions.php(3790): NotORM_Result->count()
+#3 /www/wwwroot/eliveapi/Appapi/Model/User.php(18): subscribeNum('334')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/User.php(9): Model_User->getBaseInfo('334')
+#5 /www/wwwroot/eliveapi/Appapi/Api/User.php(271): Domain_User->getBaseInfo('334')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_User->getBaseInfo()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:47:18|ERROR|Home.GetRecommendAnchor|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(139): Model_Home->getSubscribe('334')
+#5 /www/wwwroot/eliveapi/Appapi/Api/Home.php(851): Domain_Home->getSubscribe('334')
+#6 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getRecommendAnchor()
+#7 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#8 {main}
+2021-05-15 15:47:18|ERROR|Home.GetHot|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php:258
+Stack trace:
+#0 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(811): NotORM_Result->query('SELECT id, toui...', Array)
+#1 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(1008): NotORM_Result->execute()
+#2 /www/wwwroot/eliveapi/PhalApi/NotORM/NotORM/Result.php(967): NotORM_Result->rewind()
+#3 /www/wwwroot/eliveapi/Appapi/Model/Home.php(812): NotORM_Result->fetchPairs('id', 'touid')
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(962): Model_Home->getSubscribe('334')
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(254): Model_Home->getRecommendedStream('334', 0, true, 1, 6, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('334', true, 1, 6)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(359): Domain_Home->getHot('334', true, 1, 6)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}

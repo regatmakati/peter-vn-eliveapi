@@ -1,0 +1,35 @@
+2022-01-13 08:13:33 提交参数信息 开始:
+2022-01-13 08:13:33 提交参数信息 _REQUEST:{"service":"PCLive.StopRoom","uid":"340","token":"7460505df2aa7cba0b60ac6fd40cb86f","stream":"340_1641990099"}
+2022-01-13 08:13:33 提交参数信息 isexist:null
+2022-01-13 08:13:33 提交参数信息 checkToken:0
+2022-01-13 08:13:33 提交参数信息 info:{"uid":"340","showid":"1641990099","starttime":"1641990122","title":"\u7535\u5f71\u300a\u6211\u7684\u59d0\u59d0\u300b","province":"","city":"\u597d\u50cf\u5728\u706b\u661f","stream":"340_1641990099","lng":"","lat":"","type":"0","type_val":"","liveclassid":"4"}
+2022-01-13 08:13:33 提交参数信息 result:"1433"
+2022-01-13 08:13:33 提交参数信息 结束:
+2022-01-13 15:28:51 提交参数信息 开始:
+2022-01-13 15:28:51 提交参数信息 _REQUEST:{"service":"PCLive.StopRoom","uid":"350","token":"d187074314cd65290a174f94d29b02b2","stream":"350_1642058831"}
+2022-01-13 15:28:51 提交参数信息 isexist:null
+2022-01-13 15:28:51 提交参数信息 checkToken:0
+2022-01-13 15:28:51 提交参数信息 info:{"uid":"350","showid":"1642058831","starttime":"1642058840","title":"\u3010\u5e08\u5144\u3011\u7bee\u7f51 - \u9a6c\u523a","province":"","city":"\u597d\u50cf\u5728\u706b\u661f","stream":"350_1642058831","lng":"","lat":"","type":"0","type_val":"","liveclassid":"2"}
+2022-01-13 15:28:51 提交参数信息 result:"1435"
+2022-01-13 15:28:51 提交参数信息 结束:
+2022-01-13 19:02:27 提交参数信息 开始:
+2022-01-13 19:02:27 提交参数信息 _REQUEST:{"service":"PCLive.StopRoom","uid":"345","token":"d155e8538db17418766b7e61c6ac3dfe","stream":"345_1642071648"}
+2022-01-13 19:02:27 提交参数信息 isexist:null
+2022-01-13 19:02:27 提交参数信息 checkToken:0
+2022-01-13 19:02:27 提交参数信息 info:{"uid":"345","showid":"1642071648","starttime":"1642071736","title":"\u5370\u5ea6\u5c3c\u897f\u4e9a\u8d85\u7ea7\u8054\u8d5b \u9a6c\u5170VSPSS\u65af\u83b1\u66fc","province":"","city":"\u597d\u50cf\u5728\u706b\u661f","stream":"345_1642071648","lng":"","lat":"","type":"0","type_val":"","liveclassid":"4"}
+2022-01-13 19:02:27 提交参数信息 result:"1437"
+2022-01-13 19:02:27 提交参数信息 结束:
+2022-01-13 19:22:26 提交参数信息 开始:
+2022-01-13 19:22:26 提交参数信息 _REQUEST:{"service":"PCLive.StopRoom","uid":"350","token":"d187074314cd65290a174f94d29b02b2","stream":"350_1642058931"}
+2022-01-13 19:22:26 提交参数信息 isexist:null
+2022-01-13 19:22:26 提交参数信息 checkToken:0
+2022-01-13 19:22:26 提交参数信息 info:{"uid":"350","showid":"1642058931","starttime":"1642072939","title":"\u3010\u5e08\u5144\u3011\u5e7f\u53a6 - \u798f\u5efa","province":"","city":"\u597d\u50cf\u5728\u706b\u661f","stream":"350_1642058931","lng":"","lat":"","type":"0","type_val":"","liveclassid":"4"}
+2022-01-13 19:22:26 提交参数信息 result:"1438"
+2022-01-13 19:22:26 提交参数信息 结束:
+2022-01-13 23:57:59 提交参数信息 开始:
+2022-01-13 23:57:59 提交参数信息 _REQUEST:{"service":"PCLive.StopRoom","uid":"345","token":"d155e8538db17418766b7e61c6ac3dfe","stream":"345_1642089438"}
+2022-01-13 23:57:59 提交参数信息 isexist:null
+2022-01-13 23:57:59 提交参数信息 checkToken:0
+2022-01-13 23:57:59 提交参数信息 info:{"uid":"345","showid":"1642089438","starttime":"1642089464","title":"\u975e\u6d32\u56fd\u5bb6\u676f \u5580\u9ea6\u9686VS\u57c3\u585e\u4fc4\u6bd4\u4e9a","province":"","city":"\u597d\u50cf\u5728\u706b\u661f","stream":"345_1642089438","lng":"","lat":"","type":"0","type_val":"","liveclassid":"4"}
+2022-01-13 23:57:59 提交参数信息 result:"1442"
+2022-01-13 23:57:59 提交参数信息 结束:

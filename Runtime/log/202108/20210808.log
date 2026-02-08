@@ -1,0 +1,6 @@
+2021-08-08 14:05:03|ERROR|PCUser.UpdateAvatar|Obs\ObsException: OBS Error Code: RequestTimeout, Status Code: 408, OBS Error Type: client, OBS Error Message: The server did not receive a complete request message within the time that it was prepared to wait., User-Agent: obs-sdk-php/3.19.9
+
+2021-08-08 15:57:27|ERROR|PCLive.CreateRoom|Obs\ObsException: OBS Error Code: RequestTimeout, Status Code: 408, OBS Error Type: client, OBS Error Message: The server did not receive a complete request message within the time that it was prepared to wait., User-Agent: obs-sdk-php/3.19.9
+
+2021-08-08 19:43:24|ERROR|PCLive.CreateRoom|Obs\ObsException: OBS Error Code: RequestTimeout, Status Code: 408, OBS Error Type: client, OBS Error Message: The server did not receive a complete request message within the time that it was prepared to wait., User-Agent: obs-sdk-php/3.19.9
+

@@ -1,0 +1,1079 @@
+2021-05-30 02:02:33|ERROR|PCHome.GetRecommendAnchor|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getRecommendAnc...', '[{"id":"305","u...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(924): setcaches('getRecommendAnc...', Array, 600)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 02:02:33|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 02:02:33|ERROR|PCHome.getHomeData|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('PCBanner', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(165): setcaches('PCBanner', Array, 600)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHomeData()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 02:02:33|ERROR|PCHome.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(423): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 02:02:33|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 02:04:48|ERROR|PCHome.getHomeData|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('PCBanner', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(165): setcaches('PCBanner', Array, 600)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHomeData()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 02:04:48|ERROR|PCHome.GetRecommendAnchor|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getRecommendAnc...', '[{"id":"305","u...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(924): setcaches('getRecommendAnc...', Array, 600)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 02:04:48|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 02:04:48|ERROR|PCHome.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(423): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 02:06:49|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 02:06:49|ERROR|PCHome.getHomeData|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('PCBanner', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(165): setcaches('PCBanner', Array, 600)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHomeData()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 02:06:49|ERROR|PCHome.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(423): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 02:06:49|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 02:06:49|ERROR|PCHome.GetRecommendAnchor|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getRecommendAnc...', '[{"id":"305","u...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(924): setcaches('getRecommendAnc...', Array, 600)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:11:01|ERROR|PCLive.GetLiveInfo|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('token_335', '{"token":"c02cc...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(778): setcaches('token_335', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/PCLive.php(2570): checkToken('335', 'c02cc6697f5b98c...')
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCLive->getLiveInfo()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:11:35|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:11:35|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:11:35|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:11:35|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:11:35|ERROR|Home.GetSlideEvents|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlide', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Home.php(133): setcaches('getSlide', Array, 2)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getSlideEvents()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:11:35|ERROR|Home.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(382): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 04:11:39|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:11:39|ERROR|Home.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(382): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 04:11:39|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:11:39|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:11:39|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:11:39|ERROR|Home.GetSlideEvents|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlide', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Home.php(133): setcaches('getSlide', Array, 2)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getSlideEvents()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:12:50|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:12:50|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:12:50|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:12:50|ERROR|Home.GetSlideEvents|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlide', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Home.php(133): setcaches('getSlide', Array, 2)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getSlideEvents()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:12:50|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:12:50|ERROR|Home.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(382): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 04:13:22|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:13:22|ERROR|Home.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(382): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 04:13:22|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:13:22|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:13:22|ERROR|Home.GetSlideEvents|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlide', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Home.php(133): setcaches('getSlide', Array, 2)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getSlideEvents()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:13:22|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:13:39|ERROR|Home.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(382): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 04:13:39|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:13:39|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:13:39|ERROR|Home.GetSlideEvents|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlide', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Home.php(133): setcaches('getSlide', Array, 2)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getSlideEvents()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:13:39|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:13:39|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:15:23|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:15:23|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:15:23|ERROR|Home.GetSlideEvents|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlide', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Home.php(133): setcaches('getSlide', Array, 2)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getSlideEvents()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:15:23|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:15:23|ERROR|Home.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(382): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 04:15:23|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:15:40|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:15:40|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:15:40|ERROR|Home.GetSlideEvents|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlide', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Home.php(133): setcaches('getSlide', Array, 2)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getSlideEvents()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:15:40|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:15:40|ERROR|Home.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(382): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 04:15:40|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:16:02|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:16:02|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:16:02|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:16:02|ERROR|Home.GetSlideEvents|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlide', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Home.php(133): setcaches('getSlide', Array, 2)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getSlideEvents()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:16:02|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:16:02|ERROR|Home.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(382): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 04:16:11|ERROR|Home.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(382): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 04:16:11|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:16:11|ERROR|Home.GetSlideEvents|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlide', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Home.php(133): setcaches('getSlide', Array, 2)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getSlideEvents()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:16:11|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:16:11|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:16:11|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:18:48|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:18:48|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:18:48|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:18:48|ERROR|Home.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(382): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 04:18:48|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:18:48|ERROR|Home.GetSlideEvents|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlide', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Home.php(133): setcaches('getSlide', Array, 2)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getSlideEvents()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:18:57|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:18:57|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:18:57|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:18:57|ERROR|Home.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(382): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 04:18:57|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:18:57|ERROR|Home.GetSlideEvents|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlide', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Home.php(133): setcaches('getSlide', Array, 2)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getSlideEvents()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:20:00|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:20:00|ERROR|Home.GetSlideEvents|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlide', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Home.php(133): setcaches('getSlide', Array, 2)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getSlideEvents()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:20:00|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:20:00|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:20:00|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:20:00|ERROR|Home.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(382): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 04:20:46|ERROR|PCUser.GetBaseInfo|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('token_333', '{"token":"db6e7...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(778): setcaches('token_333', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/PCUser.php(275): checkToken('333', 'db6e70809e7b9cc...')
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCUser->getBaseInfo()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:20:46|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:20:46|ERROR|PCHome.GetRecommendAnchor|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('token_333', '{"token":"db6e7...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(778): setcaches('token_333', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(900): checkToken('333', 'db6e70809e7b9cc...')
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:20:46|ERROR|PCLive.GetLiveInfo|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('token_333', '{"token":"db6e7...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(778): setcaches('token_333', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/PCLive.php(2570): checkToken('333', 'db6e70809e7b9cc...')
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCLive->getLiveInfo()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:20:46|ERROR|PCLive.EnterRoom|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('token_333', '{"token":"db6e7...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(778): setcaches('token_333', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/PCLive.php(1315): checkToken(333, 'db6e70809e7b9cc...')
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCLive->enterRoom()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:20:48|ERROR|PCHome.getHomeData|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('PCBanner', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(165): setcaches('PCBanner', Array, 600)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHomeData()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:20:48|ERROR|PCHome.GetRecommendAnchor|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('token_333', '{"token":"db6e7...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(778): setcaches('token_333', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(900): checkToken('333', 'db6e70809e7b9cc...')
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:20:48|ERROR|PCHome.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('token_333', '{"token":"db6e7...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(778): setcaches('token_333', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(409): checkToken('333', 'db6e70809e7b9cc...')
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:20:49|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:20:55|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:20:55|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:20:55|ERROR|Home.GetSlideEvents|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlide', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Home.php(133): setcaches('getSlide', Array, 2)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getSlideEvents()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:20:55|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:20:55|ERROR|Home.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(382): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 04:20:55|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:20:55|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:20:56|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:20:56|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:20:56|ERROR|Home.GetSlideEvents|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlide', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Home.php(133): setcaches('getSlide', Array, 2)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getSlideEvents()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:20:57|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:20:57|ERROR|Home.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(382): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 04:21:04|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:21:04|ERROR|PCUser.GetBaseInfo|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('token_333', '{"token":"db6e7...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(778): setcaches('token_333', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/PCUser.php(275): checkToken('333', 'db6e70809e7b9cc...')
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCUser->getBaseInfo()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:21:04|ERROR|PCHome.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('token_333', '{"token":"db6e7...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(778): setcaches('token_333', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(409): checkToken('333', 'db6e70809e7b9cc...')
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:21:04|ERROR|PCHome.getHomeData|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('PCBanner', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(165): setcaches('PCBanner', Array, 600)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHomeData()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:21:04|ERROR|PCHome.GetRecommendAnchor|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('token_333', '{"token":"db6e7...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(778): setcaches('token_333', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(900): checkToken('333', 'db6e70809e7b9cc...')
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:21:05|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:21:06|ERROR|PCUser.GetBaseInfo|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('token_333', '{"token":"db6e7...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(778): setcaches('token_333', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/PCUser.php(275): checkToken('333', 'db6e70809e7b9cc...')
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCUser->getBaseInfo()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:21:06|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:21:06|ERROR|PCHome.GetRecommendAnchor|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('token_333', '{"token":"db6e7...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(778): setcaches('token_333', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(900): checkToken('333', 'db6e70809e7b9cc...')
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getRecommendAnchor()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:21:06|ERROR|PCHome.getHomeData|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('PCBanner', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(165): setcaches('PCBanner', Array, 600)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHomeData()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:21:06|ERROR|PCHome.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('token_333', '{"token":"db6e7...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(778): setcaches('token_333', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(409): checkToken('333', 'db6e70809e7b9cc...')
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->getHot()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:21:06|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:23:59|ERROR|Home.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(382): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 04:23:59|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:23:59|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:23:59|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:23:59|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:23:59|ERROR|Home.GetSlideEvents|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlide', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Home.php(133): setcaches('getSlide', Array, 2)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getSlideEvents()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:24:40|ERROR|Home.getConfig|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPub', '{"maintain_swit...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(478): setcaches('getConfigPub', Array)
+#2 /www/wwwroot/eliveapi/Appapi/Api/Home.php(172): getConfigPub()
+#3 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getConfig()
+#4 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#5 {main}
+2021-05-30 04:24:40|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:24:40|ERROR|Home.GetSlideEvents|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlide', '[{"slide_pic":"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Home.php(133): setcaches('getSlide', Array, 2)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getSlideEvents()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:24:40|ERROR|Home.GetHot|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getConfigPri', '{"family_switch...')
+#1 /www/wwwroot/eliveapi/Common/functions.php(567): setcaches('getConfigPri', Array)
+#2 /www/wwwroot/eliveapi/Common/functions.php(2363): getConfigPri()
+#3 [internal function]: handleLive(Array)
+#4 /www/wwwroot/eliveapi/Appapi/Model/Home.php(985): array_map('handleLive', Array)
+#5 /www/wwwroot/eliveapi/Appapi/Model/Home.php(270): Model_Home->getRecommendedStream('', 0, false, 1, 8, 'txzb_order desc...', '')
+#6 /www/wwwroot/eliveapi/Appapi/Domain/Home.php(20): Model_Home->getHot('', false, 1, 8)
+#7 /www/wwwroot/eliveapi/Appapi/Api/Home.php(382): Domain_Home->getHot('', false, 1, 8)
+#8 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Home->getHot()
+#9 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#10 {main}
+2021-05-30 04:24:40|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:24:40|ERROR|PCHome.download|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getAdv', '[]')
+#1 /www/wwwroot/eliveapi/Appapi/Api/PCHome.php(1025): setcaches('getAdv', Array)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_PCHome->download()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}
+2021-05-30 04:47:55|ERROR|Slide.GetSlide|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/eliveapi/Common/functions.php:38
+Stack trace:
+#0 /www/wwwroot/eliveapi/Common/functions.php(38): Redis->set('getSlideItems', '{"code":0,"msg"...')
+#1 /www/wwwroot/eliveapi/Appapi/Api/Slide.php(42): setcaches('getSlideItems', Array, 10)
+#2 /www/wwwroot/eliveapi/PhalApi/PhalApi.php(57): Api_Slide->getSlide()
+#3 /www/wwwroot/eliveapi/public/appapi/index.php(13): PhalApi->response()
+#4 {main}

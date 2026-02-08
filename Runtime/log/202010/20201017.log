@@ -1,0 +1,20 @@
+2020-10-17 15:17:25|ERROR|Slide.getPcSlide|PDOException: Unknown column 'list_order' in 'order clause' in C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\NotORM\NotORM\Result.php:258
+Stack trace:
+#0 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\NotORM\NotORM\Result.php(811): NotORM_Result->query('SELECT * FROM c...', Array)
+#1 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\NotORM\NotORM\Result.php(896): NotORM_Result->execute()
+#2 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Appapi\Model\Slide.php(35): NotORM_Result->fetchAll()
+#3 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Appapi\Domain\Slide.php(9): Model_Slide->getPcSlides()
+#4 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Appapi\Api\Slide.php(47): Domain_Slide->getPcSlide()
+#5 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\PhalApi.php(57): Api_Slide->getPcSlide()
+#6 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\public\appapi\index.php(13): PhalApi->response()
+#7 {main}
+2020-10-17 16:20:54|ERROR|Slide.clickSlideItem|PDOException: Table 'live.slide_item' doesn't exist in C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\NotORM\NotORM\Result.php:258
+Stack trace:
+#0 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\NotORM\NotORM\Result.php(931): NotORM_Result->query('UPDATE `slide_i...', Array)
+#1 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\NotORM\NotORM\Result.php(918): NotORM_Result->queryRows('UPDATE `slide_i...', Array)
+#2 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Appapi\Model\Slideitem.php(36): NotORM_Result->queryAll('UPDATE `slide_i...', Array)
+#3 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Appapi\Domain\Slide.php(27): Model_Slideitem->click(1)
+#4 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Appapi\Api\Slide.php(52): Domain_Slide->clickSlideItem(1)
+#5 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\PhalApi.php(57): Api_Slide->clickSlideItem()
+#6 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\public\appapi\index.php(13): PhalApi->response()
+#7 {main}

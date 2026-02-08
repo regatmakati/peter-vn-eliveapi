@@ -1,0 +1,33 @@
+2020-10-21 20:12:39|ERROR|Live.test|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\NotORM\NotORM\Result.php:258
+Stack trace:
+#0 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\NotORM\NotORM\Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\NotORM\NotORM\Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Common\functions.php(3478): NotORM_Result->count()
+#3 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Appapi\Model\User.php(18): subscribeNum(1)
+#4 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Appapi\Domain\User.php(9): Model_User->getBaseInfo(1)
+#5 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Appapi\Api\Live.php(2359): Domain_User->getBaseInfo(1)
+#6 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\PhalApi.php(57): Api_Live->test()
+#7 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\public\appapi\index.php(13): PhalApi->response()
+#8 {main}
+2020-10-21 20:12:53|ERROR|Live.test|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\NotORM\NotORM\Result.php:258
+Stack trace:
+#0 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\NotORM\NotORM\Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\NotORM\NotORM\Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Common\functions.php(3478): NotORM_Result->count()
+#3 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Appapi\Model\User.php(18): subscribeNum(1)
+#4 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Appapi\Domain\User.php(9): Model_User->getBaseInfo(1)
+#5 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Appapi\Api\Live.php(2359): Domain_User->getBaseInfo(1)
+#6 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\PhalApi.php(57): Api_Live->test()
+#7 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\public\appapi\index.php(13): PhalApi->response()
+#8 {main}
+2020-10-21 20:13:00|ERROR|Live.test|PDOException: Table 'live.cmf_user_subscribe' doesn't exist in C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\NotORM\NotORM\Result.php:258
+Stack trace:
+#0 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\NotORM\NotORM\Result.php(748): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\NotORM\NotORM\Result.php(760): NotORM_Result->aggregation('COUNT(*)')
+#2 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Common\functions.php(3478): NotORM_Result->count()
+#3 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Appapi\Model\User.php(18): subscribeNum(1)
+#4 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Appapi\Domain\User.php(9): Model_User->getBaseInfo(1)
+#5 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\Appapi\Api\Live.php(2359): Domain_User->getBaseInfo(1)
+#6 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\PhalApi\PhalApi.php(57): Api_Live->test()
+#7 C:\Users\Cooper\Documents\Work\Github\elive\PhalApi\public\appapi\index.php(13): PhalApi->response()
+#8 {main}
