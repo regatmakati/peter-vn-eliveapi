@@ -97,6 +97,16 @@ class Domain_Live {
 		$rs = $model->checkLive($uid,$liveuid,$stream);
 		return $rs;
 	}
+
+
+
+    public function getLiveByUid($uid) {
+        $rs = array();
+
+        $model = new Model_Live();
+        $rs = $model->getLiveByUid($uid);
+        return $rs;
+    }
 	
 	public function roomCharge($uid,$liveuid,$stream) {
 		$rs = array();

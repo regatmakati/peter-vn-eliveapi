@@ -225,6 +225,11 @@ class Api_PCLive extends PhalApi_Api
 
             ),
 
+
+
+            'getLiveByUid' => array(
+                'uid' => array('name' => 'uid', 'type' => 'int', 'min' => 1, 'require' => true, 'desc' => '会员ID'),
+            ),
         );
     }
 
@@ -1141,6 +1146,32 @@ class Api_PCLive extends PhalApi_Api
 
         $rs['info'][0] = $info;
 
+
+        return $rs;
+    }
+
+
+
+    /**
+     * 查询主播的直播间
+     * @desc
+     * @return int code 操作码，0表示成功
+     * @return array info
+     * @return string info[0].type 房间类型
+     * @return string info[0].type_val 收费房间价格，默认0
+     * @return string info[0].type_msg 提示信息
+     * @return string msg 提示信息
+     */
+    public function getLiveByUid()
+    {
+        $rs = array('code' => 0, 'msg' => '', 'info' => array());
+
+        $uid = $this->uid;
+        $domain = new Domain_Live();
+        $info = $domain->getLiveByUid($uid);
+        if($info){
+            $rs['info'][0] = $info;
+        }
 
         return $rs;
     }
