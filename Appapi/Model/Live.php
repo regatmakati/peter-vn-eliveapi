@@ -384,6 +384,19 @@ class Model_Live extends PhalApi_Model_NotORM {
         return $rs;
 
     }
+
+
+    public function getLiveByMatchId($match_id,$type=2){
+
+        $rs=DI()->notorm->live
+            ->select("*")
+            ->where('match_id=?',$match_id)
+            ->where('liveclassid=?',$type)
+            ->fetchOne();
+
+        return $rs;
+
+    }
 	
 	/* 用户余额 */
 	public function getUserCoin($uid){

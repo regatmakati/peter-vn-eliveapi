@@ -230,6 +230,12 @@ class Api_PCLive extends PhalApi_Api
             'getLiveByUid' => array(
                 'uid' => array('name' => 'uid', 'type' => 'int', 'min' => 1, 'require' => true, 'desc' => '会员ID'),
             ),
+
+            'getLiveByMatchId' => array(
+                'match_id' => array('name' => 'match_id', 'type' => 'int', 'min' => 1, 'require' => true, 'desc' => '比赛ID'),
+                'type' => array('name' => 'type', 'type' => 'int', 'min' => 2, 'require' => true, 'desc' => '比赛类型，2=篮球，4=足球'),
+                'token' => array('name' => 'token', 'require' => true, 'min' => 1, 'desc' => '会员token'),
+            ),
         );
     }
 
@@ -1169,6 +1175,23 @@ class Api_PCLive extends PhalApi_Api
         $uid = $this->uid;
         $domain = new Domain_Live();
         $info = $domain->getLiveByUid($uid);
+        if($info){
+            $rs['info'][0] = $info;
+        }
+
+        return $rs;
+    }
+
+
+
+    public function getLiveByMatchId()
+    {
+        $rs = array('code' => 0, 'msg' => '', 'info' => array());
+
+        $match_id = $this->match_id;
+        $type = $this->type;
+        $domain = new Domain_Live();
+        $info = $domain->getLiveByMatchId($match_id,$type);
         if($info){
             $rs['info'][0] = $info;
         }
