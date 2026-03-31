@@ -1176,7 +1176,7 @@ class Api_PCLive extends PhalApi_Api
         $domain = new Domain_Live();
         $info = $domain->getLiveByUid($uid);
         if($info){
-            $rs['info'][0] = $info;
+            $rs['info'] = $info;
         }
 
         return $rs;

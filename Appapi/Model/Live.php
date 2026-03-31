@@ -392,7 +392,7 @@ class Model_Live extends PhalApi_Model_NotORM {
             ->select("*")
             ->where('match_id=?',$match_id)
             ->where('liveclassid=?',$type)
-            ->fetchOne();
+            ->fetchAll();
 
         return $rs;
 
