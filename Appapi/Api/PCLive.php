@@ -566,7 +566,8 @@ class Api_PCLive extends PhalApi_Api
             "pkstream" => '',
             "banker_coin" => 10000000,
             "notice" => $notice,
-            "match_id" => $match_id
+            "match_id" => $match_id,
+            "recom_sort" => 100
         );
 
         $domain = new Domain_Live();
