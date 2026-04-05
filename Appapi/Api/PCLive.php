@@ -236,6 +236,12 @@ class Api_PCLive extends PhalApi_Api
                 'type' => array('name' => 'type', 'type' => 'int', 'min' => 2, 'require' => true, 'desc' => '比赛类型，2=篮球，4=足球'),
                 'token' => array('name' => 'token', 'require' => true, 'min' => 1, 'desc' => '会员token'),
             ),
+
+
+            'getStreamByUid' => array(
+                'uid' => array('name' => 'uid', 'type' => 'int', 'min' => 1, 'require' => true, 'desc' => '会员ID'),
+                'token' => array('name' => 'token', 'require' => true, 'min' => 1, 'desc' => '会员token'),
+            ),
         );
     }
 
@@ -548,6 +554,9 @@ class Api_PCLive extends PhalApi_Api
             @unlink($_FILES['file']['tmp_name']);
         }
 
+        $model = new Model_Sport3DayMatch();
+        $matchInfo = $model->getMatchIdByUid($uid);
+
         $dataroom = array(
             "uid" => $uid,
             "showid" => $showid,
@@ -560,13 +569,13 @@ class Api_PCLive extends PhalApi_Api
             "goodnum" => $goodnum,
             "isvideo" => 0,
             "islive" => 1,
-            "liveclassid" => $liveclassid,
+            "liveclassid" => $matchInfo['liveclassid'] ?? $liveclassid,
             "hotvotes" => 0,
             "pkuid" => 0,
             "pkstream" => '',
             "banker_coin" => 10000000,
             "notice" => $notice,
-            "match_id" => $match_id,
+            "match_id" => $matchInfo['match_id'],
             "recom_sort" => 100,
             "add_time" => time(),
         );
@@ -2703,5 +2712,35 @@ class Api_PCLive extends PhalApi_Api
         return $rs;
     }
 
+
+
+    public function getStreamByUid()
+    {
+        $rs = array('code' => 0, 'msg' => '', 'info' => array());
+
+        $uid = checkNull($this->uid);
+        $token = checkNull($this->token);
+
+        $checkToken = checkToken($uid, $token);
+//        if ($checkToken == 700) {
+//            $rs['code'] = $checkToken;
+//            $rs['msg'] = '您的登陆状态失效，请重新登陆！';
+//            return $rs;
+//        }
+
+        $model = new Model_Sport3DayMatch();
+        $matchInfo = $model->getMatchIdByUid($uid);
+
+        $domain = new Domain_Live();
+        $info = $domain->getLiveByMatchId($matchInfo['match_id'], $matchInfo['liveclassid']);
+        if($info){
+            foreach ($info as $v){
+                if(substr($v['stream'], 0, 3) === "sd-"){
+                    $rs['info']['0']['pull'] = $v['pull'];
+                }
+            }
+        }
+        return $rs;
+    }
 
 } 
