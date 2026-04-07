@@ -13,17 +13,19 @@ class Model_Sport3DayMatch extends PhalApi_Model_NotORM
         $rs = [
             'match_id' => 0,
             'liveclassid' => 0,
+            'title' => '',
         ];
 
 
         $row = $this->_model()->sports_3day_match()
-            ->select("match_id,sport_id,user_ids")
+            ->select("match_id,sport_id,user_ids,comp,home,away")
             ->where("FIND_IN_SET($uid, user_ids)")
             ->fetch();
 
         if ($row) {
             $rs['match_id'] = $row['match_id'];
             $rs['liveclassid'] = $row['sport_id'] == 2 ? 2 : ($row['sport_id'] == 1 ? 4 : 0);
+            $rs['title'] = $row['home']." VS ".$row['away'];
         }
         return $rs;
 

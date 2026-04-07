@@ -2722,11 +2722,11 @@ class Api_PCLive extends PhalApi_Api
         $token = checkNull($this->token);
 
         $checkToken = checkToken($uid, $token);
-//        if ($checkToken == 700) {
-//            $rs['code'] = $checkToken;
-//            $rs['msg'] = '您的登陆状态失效，请重新登陆！';
-//            return $rs;
-//        }
+        if ($checkToken == 700) {
+            $rs['code'] = $checkToken;
+            $rs['msg'] = '您的登陆状态失效，请重新登陆！';
+            return $rs;
+        }
 
         $model = new Model_Sport3DayMatch();
         $matchInfo = $model->getMatchIdByUid($uid);
@@ -2737,6 +2737,8 @@ class Api_PCLive extends PhalApi_Api
             foreach ($info as $v){
                 if(substr($v['stream'], 0, 3) === "sd-"){
                     $rs['info']['0']['pull'] = $v['pull'];
+                    $rs['info']['0']['title'] = $matchInfo['title'];
+                    break;
                 }
             }
         }
