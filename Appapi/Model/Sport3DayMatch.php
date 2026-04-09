@@ -31,4 +31,15 @@ class Model_Sport3DayMatch extends PhalApi_Model_NotORM
 
     }
 
+
+    public function getMatchInfo($match_id, $type)
+    {
+
+        return $this->_model()->sports_3day_match()
+            ->select("*")
+            ->where("match_id = {$match_id} and sport_id = {$type}")
+            ->fetch();
+
+    }
+
 }

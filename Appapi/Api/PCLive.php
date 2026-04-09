@@ -234,7 +234,6 @@ class Api_PCLive extends PhalApi_Api
             'getLiveByMatchId' => array(
                 'match_id' => array('name' => 'match_id', 'type' => 'int', 'min' => 1, 'require' => true, 'desc' => '比赛ID'),
                 'type' => array('name' => 'type', 'type' => 'int', 'min' => 2, 'require' => true, 'desc' => '比赛类型，2=篮球，4=足球'),
-                'token' => array('name' => 'token', 'require' => true, 'min' => 1, 'desc' => '会员token'),
             ),
 
 
@@ -1201,10 +1200,36 @@ class Api_PCLive extends PhalApi_Api
 
         $match_id = $this->match_id;
         $type = $this->type;
-        $domain = new Domain_Live();
-        $info = $domain->getLiveByMatchId($match_id,$type);
-        if($info){
-            $rs['info'] = $info;
+        if($type == 4){
+            $sport_id = 1;
+        }else{
+            $sport_id = 2;
+        }
+
+        $model = new Model_Sport3DayMatch();
+        $matchInfo = $model->getMatchInfo($match_id, $sport_id);
+
+        if(!empty($matchInfo['user_ids'])){
+
+            $user_ids=str_replace(",,",',',$matchInfo['user_ids']);
+            $user_ids=str_replace("，",',',$user_ids);
+            $userIds = explode(',', $user_ids);
+
+            $userModel = new Model_User();
+            $userArr = $userModel->getUserList($userIds);
+
+            if($userArr){
+                $liveModel = new Model_Live();
+                $liveArr = $liveModel->getLiveByMatchId($match_id, $type);
+                $liveA = array_column($liveArr, null,'uid');
+                foreach ($userArr as &$v){
+                    $v['avatar'] = get_upload_path( $v['avatar']);
+                    $v['avatar_thumb'] = get_upload_path($v['avatar_thumb']);
+                    $v['live'] = $liveA[$v['id']] ?? [];
+                }
+
+                $rs['info'] = $userArr;
+            }
         }
 
         return $rs;
