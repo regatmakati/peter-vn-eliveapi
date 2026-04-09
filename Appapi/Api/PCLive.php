@@ -2738,6 +2738,7 @@ class Api_PCLive extends PhalApi_Api
                 if(substr($v['stream'], 0, 3) === "sd-"){
                     $rs['info']['0']['pull'] = $v['pull'];
                     $rs['info']['0']['title'] = $matchInfo['title'];
+                    $rs['info']['0']['match_time'] = date("Y-m-d H:i:s", $matchInfo['match_time']);
                     break;
                 }
             }
