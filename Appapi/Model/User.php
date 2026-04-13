@@ -1382,16 +1382,6 @@ class Model_User extends PhalApi_Model_NotORM {
             return $status;
         }
         return isset($status[$k]) ? $status[$k]: '';
-    }
-
-    public function getUserList($uids) {
-        $uids_str = implode(',', $uids);
-        $list = DI()->notorm->user
-                ->select("id,avatar,avatar_thumb,user_nicename")
-                ->where("id in ({$uids_str})")
-                ->fetchAll();
-
-        return $list;
-    }
+    }	
     
 }
