@@ -225,22 +225,6 @@ class Api_PCLive extends PhalApi_Api
 
             ),
 
-
-
-            'getLiveByUid' => array(
-                'uid' => array('name' => 'uid', 'type' => 'int', 'min' => 1, 'require' => true, 'desc' => '会员ID'),
-            ),
-
-            'getLiveByMatchId' => array(
-                'match_id' => array('name' => 'match_id', 'type' => 'int', 'min' => 1, 'require' => true, 'desc' => '比赛ID'),
-                'type' => array('name' => 'type', 'type' => 'int', 'min' => 2, 'require' => true, 'desc' => '比赛类型，2=篮球，4=足球'),
-            ),
-
-
-            'getStreamByUid' => array(
-                'uid' => array('name' => 'uid', 'type' => 'int', 'min' => 1, 'require' => true, 'desc' => '会员ID'),
-                'token' => array('name' => 'token', 'require' => true, 'min' => 1, 'desc' => '会员token'),
-            ),
         );
     }
 
@@ -1162,75 +1146,6 @@ class Api_PCLive extends PhalApi_Api
 
         $rs['info'][0] = $info;
 
-
-        return $rs;
-    }
-
-
-
-    /**
-     * 查询主播的直播间
-     * @desc
-     * @return int code 操作码，0表示成功
-     * @return array info
-     * @return string info[0].type 房间类型
-     * @return string info[0].type_val 收费房间价格，默认0
-     * @return string info[0].type_msg 提示信息
-     * @return string msg 提示信息
-     */
-    public function getLiveByUid()
-    {
-        $rs = array('code' => 0, 'msg' => '', 'info' => array());
-
-        $uid = $this->uid;
-        $domain = new Domain_Live();
-        $info = $domain->getLiveByUid($uid);
-        if($info){
-            $rs['info'][0] = $info;
-        }
-
-        return $rs;
-    }
-
-
-
-    public function getLiveByMatchId()
-    {
-        $rs = array('code' => 0, 'msg' => '', 'info' => array());
-
-        $match_id = $this->match_id;
-        $type = $this->type;
-        if($type == 4){
-            $sport_id = 1;
-        }else{
-            $sport_id = 2;
-        }
-
-        $model = new Model_Sport3DayMatch();
-        $matchInfo = $model->getMatchInfo($match_id, $sport_id);
-
-        if(!empty($matchInfo['user_ids'])){
-
-            $user_ids=str_replace(",,",',',$matchInfo['user_ids']);
-            $user_ids=str_replace("，",',',$user_ids);
-            $userIds = explode(',', $user_ids);
-
-            $userModel = new Model_User();
-            $userArr = $userModel->getUserList($userIds);
-
-            if($userArr){
-                $liveModel = new Model_Live();
-                $liveArr = $liveModel->getLiveByMatchId($match_id, $type);
-                $liveA = array_column($liveArr, null,'uid');
-                foreach ($userArr as &$v){
-                    $v['avatar'] = get_upload_path( $v['avatar']);
-                    $v['avatar_thumb'] = get_upload_path($v['avatar_thumb']);
-                    $v['live'] = $liveA[$v['id']] ?? [];
-                }
-
-                $rs['info'] = $userArr;
-            }
-        }
 
         return $rs;
     }
@@ -2737,38 +2652,5 @@ class Api_PCLive extends PhalApi_Api
         return $rs;
     }
 
-
-
-    public function getStreamByUid()
-    {
-        $rs = array('code' => 0, 'msg' => '', 'info' => array());
-
-        $uid = checkNull($this->uid);
-        $token = checkNull($this->token);
-
-        $checkToken = checkToken($uid, $token);
-        if ($checkToken == 700) {
-            $rs['code'] = $checkToken;
-            $rs['msg'] = '您的登陆状态失效，请重新登陆！';
-            return $rs;
-        }
-
-        $model = new Model_Sport3DayMatch();
-        $matchInfo = $model->getMatchIdByUid($uid);
-
-        $domain = new Domain_Live();
-        $info = $domain->getLiveByMatchId($matchInfo['match_id'], $matchInfo['liveclassid']);
-        if($info){
-            foreach ($info as $v){
-                if(substr($v['stream'], 0, 3) === "sd-"){
-                    $rs['info']['0']['pull'] = $v['pull'];
-                    $rs['info']['0']['title'] = $matchInfo['title'];
-                    $rs['info']['0']['match_time'] = date("Y-m-d H:i:s", $matchInfo['match_time']);
-                    break;
-                }
-            }
-        }
-        return $rs;
-    }
 
 } 
