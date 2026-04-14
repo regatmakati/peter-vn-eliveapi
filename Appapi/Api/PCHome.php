@@ -431,7 +431,7 @@ class Api_PCHome extends PhalApi_Api
         $list=getcaches($key2);
         if(!$list){
             $list = $domain->getHot($uid, $isLoggedIn, $this->p, $this->limit);
-            setCaches($key2,$list,2);
+            setCaches($key2,$list,60);
         }
 
 //        $rs['info'][0]['slide'] = $slide;

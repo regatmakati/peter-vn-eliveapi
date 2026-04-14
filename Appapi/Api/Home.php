@@ -485,7 +485,7 @@ class Api_Home extends PhalApi_Api
 		$list=getcaches($key2);
 		if(!$list){
 			$list = $domain->getHot($uid, $isLoggedIn, $this->p, $this->limit);
-			setCaches($key2,$list,2);
+			setCaches($key2,$list,60);
 		}
 
 		$rs['info'] = $list;
@@ -862,8 +862,14 @@ class Api_Home extends PhalApi_Api
         if(!$liveclassid){
             return $rs;
         }
-        $domain=new Domain_Home();
-        $res=$domain->getClassLive($liveclassid,$p);
+        $key2="getClassLive_".$this->p;
+        $list=getcaches($key2);
+        if(!$list){
+            /* 推单列表 */
+            $domain=new Domain_Home();
+            $res=$domain->getClassLive($liveclassid,$p);
+            setCaches($key2,$list,60);
+        }
 
         $rs['info']=$res;
         return $rs;
@@ -979,7 +985,7 @@ class Api_Home extends PhalApi_Api
             //$touids = getcaches($key);
             if(!$touids){
                 $touids = $domain->getSubscribe($uid);
-                setcaches($key,$touids,1);
+                setcaches($key,$touids,60);
             }
         }
 

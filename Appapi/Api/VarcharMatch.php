@@ -45,9 +45,14 @@ class Api_VarcharMatch extends PhalApi_Api {
         $this->rocm_status;
         $p = $this->p;
 
-        /* 推单列表 */
-        $domain = new Domain_VarcharMatch();
-        $info = $domain->getVarcharMatchList($where, $p, $this->limit);
+        $key2="varcharMatch_getList_".$this->p;
+        $list=getcaches($key2);
+        if(!$list){
+            /* 推单列表 */
+            $domain = new Domain_VarcharMatch();
+            $info = $domain->getVarcharMatchList($where, $p, $this->limit);
+            setCaches($key2,$list,60);
+        }
 
         $rs['info'][0]=$info;
 

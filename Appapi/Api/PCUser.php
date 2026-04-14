@@ -1751,8 +1751,14 @@ class Api_PCUser extends PhalApi_Api {
 	public function getPerSetting() {
 		$rs = array('code' => 0, 'msg' => '', 'info' => array());
 
-        $domain = new Domain_User();
-        $info = $domain->getPerSetting();
+        $key2="getPerSetting";
+        $info=getcaches($key2);
+        if(!$info){
+            $domain = new Domain_User();
+            $info = $domain->getPerSetting();
+            setCaches($key2, $info,600);
+        }
+
         $info[]=array('id'=>'0','name'=>'隐私政策','thumb'=>'' ,'href'=>get_upload_path("/portal/page/index?id=3"));
         $info[]=array('id'=>'0','name'=>'用户协议','thumb'=>'' ,'href'=>get_upload_path("/portal/page/index?id=5"));
 		$info[]=array('id'=>'0','name'=>'免责声明','thumb'=>'' ,'href'=>get_upload_path("/portal/page/index?id=45"));

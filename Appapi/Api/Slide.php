@@ -39,7 +39,7 @@ class Api_Slide extends PhalApi_Api
 		$slide = getcaches($key1);
 		if(empty($slide)){
 			$slide = $domain->getSlide();
-			setcaches($key1, $slide, 10);
+			setcaches($key1, $slide, 60);
 		}
 		return $slide;
     }
