@@ -29,9 +29,15 @@ class Api_Watermark extends PhalApi_Api {
 	public function getWatermark() {
 		$rs = array('code' => 0, 'msg' => '', 'info' => array());
         $device=$this->device;
-		
-		$domain = new Domain_Watermark();
-		$info = $domain->getWatermark($device);
+
+        $key2="getWatermark";
+        $list=getcaches($key2);
+        if(!$list){
+            /* 推单列表 */
+            $domain = new Domain_Watermark();
+            $info = $domain->getWatermark($device);
+            setCaches($key2,$list,600);
+        }
 
 		
 		$rs['info']=$info;
