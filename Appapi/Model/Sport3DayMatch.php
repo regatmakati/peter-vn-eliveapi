@@ -14,13 +14,15 @@ class Model_Sport3DayMatch extends PhalApi_Model_NotORM
             'match_id' => 0,
             'liveclassid' => 0,
             'title' => '',
+            'match_time' => '',
+            'pushurl1' => '',
         ];
 
 
         $anchor = $this->_model()->sports_3day_match_anchor_vn()->where("FIND_IN_SET($uid, user_ids)")->fetch();
         if($anchor){
             $row = $this->_model()->sports_3day_match()
-                    ->select("match_id,sport_id,user_ids,comp,home,away")
+                    ->select("*")
                     ->where("match_id = {$anchor['match_id']} and sport_id = {$anchor['sport_id']}")
                     ->fetch();
 
@@ -28,6 +30,8 @@ class Model_Sport3DayMatch extends PhalApi_Model_NotORM
                 $rs['match_id'] = $row['match_id'];
                 $rs['liveclassid'] = $row['sport_id'] == 2 ? 2 : ($row['sport_id'] == 1 ? 4 : 0);
                 $rs['title'] = $row['home']." VS ".$row['away'];
+                $rs['pushurl1'] = $row['pushurl1'];
+                $rs['match_time'] = $row['match_time'];
             }
         }
         return $rs;

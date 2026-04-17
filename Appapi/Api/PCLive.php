@@ -2746,27 +2746,26 @@ class Api_PCLive extends PhalApi_Api
         $uid = checkNull($this->uid);
         $token = checkNull($this->token);
 
-        $checkToken = checkToken($uid, $token);
-        if ($checkToken == 700) {
-            $rs['code'] = $checkToken;
-            $rs['msg'] = '您的登陆状态失效，请重新登陆！';
-            return $rs;
-        }
+//        $checkToken = checkToken($uid, $token);
+//        if ($checkToken == 700) {
+//            $rs['code'] = $checkToken;
+//            $rs['msg'] = '您的登陆状态失效，请重新登陆！';
+//            return $rs;
+//        }
 
         $model = new Model_Sport3DayMatch();
         $matchInfo = $model->getMatchIdByUid($uid);
 
-        $domain = new Domain_Live();
-        $info = $domain->getLiveByMatchId($matchInfo['match_id'], $matchInfo['liveclassid']);
-        if($info){
-            foreach ($info as $v){
-                if(substr($v['stream'], 0, 3) === "sd-"){
-                    $rs['info']['0']['pull'] = $v['pull'];
-                    $rs['info']['0']['title'] = $matchInfo['title'];
-                    $rs['info']['0']['match_time'] = date("Y-m-d H:i:s", $matchInfo['match_time']);
-                    break;
-                }
-            }
+
+        if($matchInfo){
+            $pushurlarr = explode('/',$matchInfo['pushurl1']);
+            $streamid = $pushurlarr[count($pushurlarr) - 1];
+            $pull = PrivateKeyA('rtmp', $streamid, 0);
+
+            $rs['info']['0']['pull'] = $pull;
+            $rs['info']['0']['title'] = $matchInfo['title'];
+            $rs['info']['0']['match_time'] = date("Y-m-d H:i:s", $matchInfo['match_time']);
+
         }
         return $rs;
     }
