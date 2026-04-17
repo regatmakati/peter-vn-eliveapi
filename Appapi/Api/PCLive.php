@@ -2746,12 +2746,12 @@ class Api_PCLive extends PhalApi_Api
         $uid = checkNull($this->uid);
         $token = checkNull($this->token);
 
-//        $checkToken = checkToken($uid, $token);
-//        if ($checkToken == 700) {
-//            $rs['code'] = $checkToken;
-//            $rs['msg'] = '您的登陆状态失效，请重新登陆！';
-//            return $rs;
-//        }
+        $checkToken = checkToken($uid, $token);
+        if ($checkToken == 700) {
+            $rs['code'] = $checkToken;
+            $rs['msg'] = '您的登陆状态失效，请重新登陆！';
+            return $rs;
+        }
 
         $model = new Model_Sport3DayMatch();
         $matchInfo = $model->getMatchIdByUid($uid);
