@@ -16,6 +16,8 @@ class Model_Sport3DayMatch extends PhalApi_Model_NotORM
             'title' => '',
             'match_time' => '',
             'pushurl1' => '',
+            'pushurl2' => '',
+            'pushurl3' => '',
         ];
 
 
@@ -31,6 +33,8 @@ class Model_Sport3DayMatch extends PhalApi_Model_NotORM
                 $rs['liveclassid'] = $row['sport_id'] == 2 ? 2 : ($row['sport_id'] == 1 ? 4 : 0);
                 $rs['title'] = $row['home']." VS ".$row['away'];
                 $rs['pushurl1'] = $row['pushurl1'];
+                $rs['pushurl2'] = $row['pushurl2'];
+                $rs['pushurl3'] = $row['pushurl3'];
                 $rs['match_time'] = $row['match_time'];
             }
         }

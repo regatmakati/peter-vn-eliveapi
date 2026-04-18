@@ -2758,11 +2758,34 @@ class Api_PCLive extends PhalApi_Api
 
 
         if($matchInfo){
-            $pushurlarr = explode('/',$matchInfo['pushurl1']);
-            $streamid = $pushurlarr[count($pushurlarr) - 1];
-            $pull = PrivateKeyA('rtmp', $streamid, 0);
+            if($matchInfo['pushurl1']){
+                $pushurlarr = explode('/',$matchInfo['pushurl1']);
+                $streamid = $pushurlarr[count($pushurlarr) - 1];
+                $pull = PrivateKeyA('rtmp', $streamid, 0);
+                $rs['info']['0']['pull1'] = $pull;
+            }else{
+                $rs['info']['0']['pull1'] = '';
+            }
 
-            $rs['info']['0']['pull'] = $pull;
+            if($matchInfo['pushurl2']){
+                $pushurlarr = explode('/',$matchInfo['pushurl2']);
+                $streamid = $pushurlarr[count($pushurlarr) - 1];
+                $pull = PrivateKeyA('rtmp', $streamid, 0);
+                $rs['info']['0']['pull2'] = $pull;
+            }else{
+                $rs['info']['0']['pull2'] = '';
+            }
+
+            if($matchInfo['pushurl3']){
+                $pushurlarr = explode('/',$matchInfo['pushurl3']);
+                $streamid = $pushurlarr[count($pushurlarr) - 1];
+                $pull = PrivateKeyA('rtmp', $streamid, 0);
+                $rs['info']['0']['pull3'] = $pull;
+            }else{
+                $rs['info']['0']['pull3'] = '';
+            }
+
+
             $rs['info']['0']['title'] = $matchInfo['title'];
             $rs['info']['0']['match_time'] = date("Y-m-d H:i:s", $matchInfo['match_time']);
 
